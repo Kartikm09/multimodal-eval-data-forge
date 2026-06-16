@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multimodal-eval-data-forge"
+version = "0.1.0"
+description = "Generate and validate synthetic JSONL tasks for multimodal AI model evaluation."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Kartik Mishra" }]
+license = { text = "MIT" }
+keywords = ["multimodal-evaluation", "synthetic-data", "jsonl", "ai-training", "rubrics", "python"]
+
+[project.scripts]
+eval-data-forge = "multimodal_eval_forge.cli:main"

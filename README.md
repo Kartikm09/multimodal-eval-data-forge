@@ -39,9 +39,10 @@ Validate a JSONL file:
 PYTHONPATH=src python3 -m multimodal_eval_forge.cli validate examples/dataset.jsonl
 ```
 
-Run tests:
+Run tests (the artifact checks require the pinned review dependencies):
 
 ```bash
+python3 -m pip install -r requirements-review.txt
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
@@ -68,3 +69,7 @@ This project demonstrates:
 - JSONL validation
 - Python CLI development
 - Public-safe AI training portfolio work
+
+## Business document and privacy review
+
+The [fictional Alder review corpus](examples/business-review/README.md) adds actual DOCX/PDF reports, slides, formula workbooks, two deliberately flawed candidates, known-label privacy checks, and a local human review queue. Run `PYTHONPATH=src python scripts/verify.py` after installing the pinned review dependencies. No automated finding is a certification.

@@ -1,0 +1,5 @@
+pypdf==6.16.1
+reportlab==4.4.9
+# Resolved transitive dependencies used in the clean verification environment.
+pillow==12.3.0
+charset-normalizer==3.5.1

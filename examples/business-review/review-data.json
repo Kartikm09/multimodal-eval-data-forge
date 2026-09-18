@@ -1,0 +1,446 @@
+{
+  "classification": "synthetic",
+  "source": "source-brief.md",
+  "cases": [
+    {
+      "id": "reference",
+      "title": "Reference business bundle",
+      "kind": "writing",
+      "prompt": "Assess clarity and whether the recommendation communicates uncertainty. Inspect every artifact and the structured findings.",
+      "result": {
+        "schema_version": 1,
+        "classification": "synthetic",
+        "bundle_id": "reference",
+        "source_version": "v2",
+        "issues": [],
+        "requires_human_review": true,
+        "automated_status": "no_known_fixture_errors",
+        "human_review_topics": [
+          "writing quality",
+          "ambiguous privacy context"
+        ],
+        "certification": false
+      },
+      "evidence": {
+        "DOCX": "reference/report.docx",
+        "PDF": "reference/report.pdf",
+        "Slides": "reference/slides.pptx",
+        "Workbook": "reference/workbook.xlsx"
+      },
+      "previews": [
+        "reference/previews/docx/page-1.png",
+        "reference/previews/slides/page-1.png",
+        "reference/previews/slides/page-2.png",
+        "reference/previews/workbook.png"
+      ]
+    },
+    {
+      "id": "candidate-a",
+      "title": "Candidate A business bundle",
+      "kind": "writing",
+      "prompt": "Assess clarity and whether the recommendation communicates uncertainty. Inspect every artifact and the structured findings.",
+      "result": {
+        "schema_version": 1,
+        "classification": "synthetic",
+        "bundle_id": "candidate-a",
+        "source_version": "v2",
+        "issues": [
+          {
+            "id": "issue-1",
+            "code": "stale_value",
+            "file": "report.docx",
+            "detail": "Claim disagrees with current source value or version",
+            "source_ref": "S2",
+            "expected": {
+              "label": "Unit price",
+              "value": 25,
+              "unit": "USD per unit",
+              "version": "v2"
+            },
+            "actual": {
+              "source_ref": "S2",
+              "value": 30,
+              "unit": "USD per unit",
+              "version": "v1",
+              "text": "Unit price: 30 USD per unit (S2 v1)"
+            },
+            "severity": "error"
+          },
+          {
+            "id": "issue-2",
+            "code": "unsupported_claim",
+            "file": "report.docx",
+            "detail": "No source supports this claim",
+            "source_ref": "S9",
+            "expected": null,
+            "actual": "Customer demand is guaranteed (S9 v2)",
+            "severity": "error"
+          },
+          {
+            "id": "issue-3",
+            "code": "omitted_requirement",
+            "file": "report.docx/report.pdf",
+            "detail": "Missing required field Risk",
+            "source_ref": null,
+            "expected": null,
+            "actual": null,
+            "severity": "error"
+          },
+          {
+            "id": "issue-4",
+            "code": "wrong_formula",
+            "file": "workbook.xlsx",
+            "detail": "B8 differs from independently calculated source expectation",
+            "source_ref": null,
+            "expected": 3000,
+            "actual": 150.0,
+            "severity": "error"
+          },
+          {
+            "id": "issue-5",
+            "code": "wrong_formula",
+            "file": "workbook.xlsx",
+            "detail": "B10 differs from independently calculated source expectation",
+            "source_ref": null,
+            "expected": 1200,
+            "actual": -1650.0,
+            "severity": "error"
+          }
+        ],
+        "requires_human_review": true,
+        "automated_status": "review",
+        "human_review_topics": [
+          "writing quality",
+          "ambiguous privacy context"
+        ],
+        "certification": false
+      },
+      "evidence": {
+        "DOCX": "candidate-a/report.docx",
+        "PDF": "candidate-a/report.pdf",
+        "Slides": "candidate-a/slides.pptx",
+        "Workbook": "candidate-a/workbook.xlsx"
+      },
+      "previews": [
+        "candidate-a/previews/docx/page-1.png",
+        "candidate-a/previews/slides/page-1.png",
+        "candidate-a/previews/slides/page-2.png",
+        "candidate-a/previews/workbook.png"
+      ]
+    },
+    {
+      "id": "candidate-b",
+      "title": "Candidate B business bundle",
+      "kind": "writing",
+      "prompt": "Assess clarity and whether the recommendation communicates uncertainty. Inspect every artifact and the structured findings.",
+      "result": {
+        "schema_version": 1,
+        "classification": "synthetic",
+        "bundle_id": "candidate-b",
+        "source_version": "v2",
+        "issues": [
+          {
+            "id": "issue-1",
+            "code": "inconsistent_units",
+            "file": "report.docx",
+            "detail": "Claim unit differs from source unit",
+            "source_ref": "S4",
+            "expected": "g",
+            "actual": "kg",
+            "severity": "error"
+          },
+          {
+            "id": "issue-2",
+            "code": "contradictory_conclusion",
+            "file": "slides.pptx",
+            "detail": "Report and slide conclusions differ",
+            "source_ref": null,
+            "expected": "Approve a limited pilot subject to reviewer approval",
+            "actual": "Reject the pilot",
+            "severity": "error"
+          },
+          {
+            "id": "issue-3",
+            "code": "clipping",
+            "file": "slides.pptx",
+            "detail": "Text shape extends outside slide",
+            "source_ref": null,
+            "expected": null,
+            "actual": {
+              "part": "ppt/slides/slide2.xml",
+              "text": "Package mass 125 kg",
+              "bounds": [
+                11239500,
+                5524500,
+                3810000,
+                762000
+              ]
+            },
+            "severity": "error"
+          }
+        ],
+        "requires_human_review": true,
+        "automated_status": "review",
+        "human_review_topics": [
+          "writing quality",
+          "ambiguous privacy context"
+        ],
+        "certification": false
+      },
+      "evidence": {
+        "DOCX": "candidate-b/report.docx",
+        "PDF": "candidate-b/report.pdf",
+        "Slides": "candidate-b/slides.pptx",
+        "Workbook": "candidate-b/workbook.xlsx"
+      },
+      "previews": [
+        "candidate-b/previews/docx/page-1.png",
+        "candidate-b/previews/slides/page-1.png",
+        "candidate-b/previews/slides/page-2.png",
+        "candidate-b/previews/workbook.png"
+      ]
+    },
+    {
+      "id": "exact",
+      "title": "Exact privacy case",
+      "kind": "privacy",
+      "prompt": "Judge the context and review exact span metrics. A model number is public product data. Known labels only; this is not a complete PII detector.",
+      "result": {
+        "id": "exact",
+        "text": "Synthetic contact review\nName: Asha Example\nEmail: asha@example.test\nAccount: ACCT-SYN-1042\nKit model 1042\nDemand remains uncertain\n",
+        "gold_spans": [
+          {
+            "start": 31,
+            "end": 43,
+            "label": "Asha Example"
+          },
+          {
+            "start": 51,
+            "end": 68,
+            "label": "asha@example.test"
+          },
+          {
+            "start": 78,
+            "end": 91,
+            "label": "ACCT-SYN-1042"
+          }
+        ],
+        "predicted_spans": [
+          {
+            "start": 31,
+            "end": 43,
+            "label": "Asha Example"
+          },
+          {
+            "start": 51,
+            "end": 68,
+            "label": "asha@example.test"
+          },
+          {
+            "start": 78,
+            "end": 91,
+            "label": "ACCT-SYN-1042"
+          }
+        ],
+        "metrics": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "true_positive": 3,
+          "false_positive": 0,
+          "false_negative": 0
+        }
+      },
+      "evidence": {
+        "Original PDF": "privacy/original.pdf",
+        "Candidate PDF": "privacy/redacted.pdf"
+      },
+      "previews": [
+        "privacy/redacted.png"
+      ]
+    },
+    {
+      "id": "missed-account",
+      "title": "Missed Account privacy case",
+      "kind": "privacy",
+      "prompt": "Judge the context and review exact span metrics. A model number is public product data. Known labels only; this is not a complete PII detector.",
+      "result": {
+        "id": "missed-account",
+        "text": "Synthetic contact review\nName: Asha Example\nEmail: asha@example.test\nAccount: ACCT-SYN-1042\nKit model 1042\nDemand remains uncertain\n",
+        "gold_spans": [
+          {
+            "start": 31,
+            "end": 43,
+            "label": "Asha Example"
+          },
+          {
+            "start": 51,
+            "end": 68,
+            "label": "asha@example.test"
+          },
+          {
+            "start": 78,
+            "end": 91,
+            "label": "ACCT-SYN-1042"
+          }
+        ],
+        "predicted_spans": [
+          {
+            "start": 31,
+            "end": 43,
+            "label": "Asha Example"
+          },
+          {
+            "start": 51,
+            "end": 68,
+            "label": "asha@example.test"
+          }
+        ],
+        "metrics": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "true_positive": 2,
+          "false_positive": 0,
+          "false_negative": 1
+        }
+      },
+      "evidence": {
+        "Original PDF": "privacy/original.pdf",
+        "Candidate PDF": "privacy/missed.pdf"
+      },
+      "previews": [
+        "privacy/missed.png"
+      ]
+    },
+    {
+      "id": "overredacted-model",
+      "title": "Overredacted Model privacy case",
+      "kind": "privacy",
+      "prompt": "Judge the context and review exact span metrics. A model number is public product data. Known labels only; this is not a complete PII detector.",
+      "result": {
+        "id": "overredacted-model",
+        "text": "Synthetic contact review\nName: Asha Example\nEmail: asha@example.test\nAccount: ACCT-SYN-1042\nKit model 1042\nDemand remains uncertain\n",
+        "gold_spans": [
+          {
+            "start": 31,
+            "end": 43,
+            "label": "Asha Example"
+          },
+          {
+            "start": 51,
+            "end": 68,
+            "label": "asha@example.test"
+          },
+          {
+            "start": 78,
+            "end": 91,
+            "label": "ACCT-SYN-1042"
+          }
+        ],
+        "predicted_spans": [
+          {
+            "start": 31,
+            "end": 43,
+            "label": "Asha Example"
+          },
+          {
+            "start": 51,
+            "end": 68,
+            "label": "asha@example.test"
+          },
+          {
+            "start": 78,
+            "end": 91,
+            "label": "ACCT-SYN-1042"
+          },
+          {
+            "start": 92,
+            "end": 106,
+            "label": "Kit model 1042"
+          }
+        ],
+        "metrics": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "true_positive": 3,
+          "false_positive": 1,
+          "false_negative": 0
+        }
+      },
+      "evidence": {
+        "Original PDF": "privacy/original.pdf",
+        "Candidate PDF": "privacy/overredacted.pdf"
+      },
+      "previews": [
+        "privacy/overredacted.png"
+      ]
+    },
+    {
+      "id": "unicode-formatting",
+      "title": "Unicode Formatting privacy case",
+      "kind": "privacy",
+      "prompt": "Judge the context and review exact span metrics. A model number is public product data. Known labels only; this is not a complete PII detector.",
+      "result": {
+        "id": "unicode-formatting",
+        "text": "Owner Asha Example email ａｓｈａ＠ｅｘａｍｐｌｅ．ｔｅｓｔ uses ACCT-​SYN-1042. Kit model 1042.",
+        "gold_spans": [
+          {
+            "start": 6,
+            "end": 18,
+            "label": "Asha Example"
+          },
+          {
+            "start": 25,
+            "end": 42,
+            "label": "asha@example.test"
+          },
+          {
+            "start": 48,
+            "end": 62,
+            "label": "ACCT-SYN-1042"
+          }
+        ],
+        "predicted_spans": [
+          {
+            "start": 6,
+            "end": 18,
+            "label": "Asha Example"
+          },
+          {
+            "start": 25,
+            "end": 42,
+            "label": "asha@example.test"
+          },
+          {
+            "start": 48,
+            "end": 62,
+            "label": "ACCT-SYN-1042"
+          }
+        ],
+        "metrics": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "true_positive": 3,
+          "false_positive": 0,
+          "false_negative": 0
+        }
+      },
+      "evidence": {
+        "Original PDF": "privacy/original.pdf"
+      },
+      "previews": []
+    },
+    {
+      "id": "ambiguous",
+      "title": "Ambiguous contact reference",
+      "kind": "privacy",
+      "prompt": "“Ask Jordan about model 1042.” Jordan may be a person, team, or product name. Explain what context you would request before deciding. No automated gold label is assigned.",
+      "result": {
+        "automated_status": "human_context_required",
+        "precision": null,
+        "recall": null
+      },
+      "evidence": {},
+      "previews": []
+    }
+  ]
+}

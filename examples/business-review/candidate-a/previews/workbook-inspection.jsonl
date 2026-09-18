@@ -1,0 +1,1 @@
+{"kind":"table","sheet":"Pilot","address":"A1:C10","rows":10,"cols":3,"values":[["Refill pilot calculation",null,null],["Metric","Value","Unit"],["Units",120,"units"],["Unit price",30,"USD per unit"],["Unit cost",15,"USD per unit"],["Source","source.json v2","synthetic"],[null,null,null],["Revenue",150,"USD"],["Cost",1800,"USD"],["Contribution",-1650,"USD"]]}

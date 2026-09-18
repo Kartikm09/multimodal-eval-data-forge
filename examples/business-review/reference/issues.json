@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "classification": "synthetic",
+  "bundle_id": "reference",
+  "source_version": "v2",
+  "issues": [],
+  "requires_human_review": true,
+  "automated_status": "no_known_fixture_errors",
+  "human_review_topics": [
+    "writing quality",
+    "ambiguous privacy context"
+  ],
+  "certification": false
+}

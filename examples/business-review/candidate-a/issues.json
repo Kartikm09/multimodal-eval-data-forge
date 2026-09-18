@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "classification": "synthetic",
+  "bundle_id": "candidate-a",
+  "source_version": "v2",
+  "issues": [
+    {
+      "id": "issue-1",
+      "code": "stale_value",
+      "file": "report.docx",
+      "detail": "Claim disagrees with current source value or version",
+      "source_ref": "S2",
+      "expected": {
+        "label": "Unit price",
+        "value": 25,
+        "unit": "USD per unit",
+        "version": "v2"
+      },
+      "actual": {
+        "source_ref": "S2",
+        "value": 30,
+        "unit": "USD per unit",
+        "version": "v1",
+        "text": "Unit price: 30 USD per unit (S2 v1)"
+      },
+      "severity": "error"
+    },
+    {
+      "id": "issue-2",
+      "code": "unsupported_claim",
+      "file": "report.docx",
+      "detail": "No source supports this claim",
+      "source_ref": "S9",
+      "expected": null,
+      "actual": "Customer demand is guaranteed (S9 v2)",
+      "severity": "error"
+    },
+    {
+      "id": "issue-3",
+      "code": "omitted_requirement",
+      "file": "report.docx/report.pdf",
+      "detail": "Missing required field Risk",
+      "source_ref": null,
+      "expected": null,
+      "actual": null,
+      "severity": "error"
+    },
+    {
+      "id": "issue-4",
+      "code": "wrong_formula",
+      "file": "workbook.xlsx",
+      "detail": "B8 differs from independently calculated source expectation",
+      "source_ref": null,
+      "expected": 3000,
+      "actual": 150.0,
+      "severity": "error"
+    },
+    {
+      "id": "issue-5",
+      "code": "wrong_formula",
+      "file": "workbook.xlsx",
+      "detail": "B10 differs from independently calculated source expectation",
+      "source_ref": null,
+      "expected": 1200,
+      "actual": -1650.0,
+      "severity": "error"
+    }
+  ],
+  "requires_human_review": true,
+  "automated_status": "review",
+  "human_review_topics": [
+    "writing quality",
+    "ambiguous privacy context"
+  ],
+  "certification": false
+}

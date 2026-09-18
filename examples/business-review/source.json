@@ -1,0 +1,19 @@
+{
+  "classification": "synthetic",
+  "task_id": "refill-pilot-20260918",
+  "version": "v2",
+  "as_of": "2026-09-18",
+  "organization": "Fictional Alder Refill Cooperative",
+  "facts": {
+    "S1": {"label": "Units", "value": 120, "unit": "units", "version": "v2"},
+    "S2": {"label": "Unit price", "value": 25, "unit": "USD per unit", "version": "v2"},
+    "S3": {"label": "Unit cost", "value": 15, "unit": "USD per unit", "version": "v2"},
+    "S4": {"label": "Package mass", "value": 125, "unit": "g", "version": "v2"}
+  },
+  "requirements": ["Cost basis", "Risk", "Decision"],
+  "risk": "Demand is a planning assumption and has not been measured.",
+  "decision": "Approve a limited pilot subject to reviewer approval",
+  "expected_cells": {"B8": 3000, "B9": 1800, "B10": 1200},
+  "sensitive_values": ["Asha Example", "asha@example.test", "ACCT-SYN-1042"],
+  "preserve_values": ["Kit model 1042", "Demand remains uncertain"]
+}

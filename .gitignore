@@ -9,3 +9,7 @@ build/
 *.egg-info/
 .DS_Store
 generated_tasks.jsonl
+node_modules/
+.npm-cache/
+test-results/
+playwright-report/

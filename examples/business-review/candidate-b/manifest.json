@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "bundle_id": "candidate-b",
+  "classification": "synthetic",
+  "claims": [
+    {
+      "source_ref": "S1",
+      "value": 120,
+      "unit": "units",
+      "version": "v2",
+      "text": "Units: 120 units (S1 v2)"
+    },
+    {
+      "source_ref": "S2",
+      "value": 25,
+      "unit": "USD per unit",
+      "version": "v2",
+      "text": "Unit price: 25 USD per unit (S2 v2)"
+    },
+    {
+      "source_ref": "S3",
+      "value": 15,
+      "unit": "USD per unit",
+      "version": "v2",
+      "text": "Unit cost: 15 USD per unit (S3 v2)"
+    },
+    {
+      "source_ref": "S4",
+      "value": 125,
+      "unit": "kg",
+      "version": "v2",
+      "text": "Package mass: 125 kg (S4 v2)"
+    }
+  ]
+}

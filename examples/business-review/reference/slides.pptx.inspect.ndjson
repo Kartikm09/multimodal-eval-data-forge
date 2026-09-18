@@ -1,0 +1,15 @@
+{"kind":"deck","id":"pr/kikreu","name":"Deck"}
+{"kind":"layout","layoutId":"ec0d49fe-89a7-4a6d-84ad-02659ec04185","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"a2b848fe-048d-49cf-bc61-6110a9c021d2","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/94ati1","slide":1,"title":"Refill pilot review","textShapes":4}
+{"kind":"textbox","id":"sh/gvidk7mh","slide":1,"text":"Refill pilot review","textPreview":"Refill pilot review","textChars":19,"textLines":1,"bbox":[72,52,1120,80]}
+{"kind":"textbox","id":"sh/fu9wb2lw","slide":1,"text":"Fictional Alder Refill Cooperative","textPreview":"Fictional Alder Refill Cooperative","textChars":34,"textLines":1,"bbox":[72,160,1120,65]}
+{"kind":"textbox","id":"sh/ut0vix4b","slide":1,"text":"Units: 120\nUnit price: USD 25\nUnit cost: USD 15\nSource: source.json, v2","textPreview":"Units: 120 | Unit price: USD 25 | Unit cost: USD 15 | Source: source.json, v2","textChars":71,"textLines":4,"bbox":[72,260,1100,260]}
+{"kind":"textbox","id":"sh/p0behw3y","slide":1,"text":"reference · Synthetic evaluation fixture · 18 September 2026","textPreview":"reference · Synthetic evaluation fixture · 18 September 2026","textChars":60,"textLines":1,"bbox":[72,628,1100,48]}
+{"kind":"notes","id":"nt/94ati1","slide":1,"text":"All business facts are fictional. Source: examples/business-review/source.json, version v2. This candidate may intentionally disagree with the source."}
+{"kind":"slide","id":"sl/r8pkoi","slide":2,"title":"Decision and uncertainty","textShapes":4}
+{"kind":"textbox","id":"sh/netgnq10","slide":2,"text":"Decision and uncertainty","textPreview":"Decision and uncertainty","textChars":24,"textLines":1,"bbox":[72,52,1120,80]}
+{"kind":"textbox","id":"sh/8f2xgvil","slide":2,"text":"Decision: Approve a limited pilot subject to reviewer approval","textPreview":"Decision: Approve a limited pilot subject to reviewer approval","textChars":62,"textLines":1,"bbox":[72,200,1100,160]}
+{"kind":"textbox","id":"sh/9gbyp0jq","slide":2,"text":"Demand is a planning assumption and has not been measured.","textPreview":"Demand is a planning assumption and has not been measured.","textChars":58,"textLines":1,"bbox":[72,410,1080,120]}
+{"kind":"textbox","id":"sh/y90fal03","slide":2,"text":"Synthetic review fixture. Human assessment remains required.","textPreview":"Synthetic review fixture. Human assessment remains required.","textChars":60,"textLines":1,"bbox":[72,632,1000,40]}
+{"kind":"notes","id":"nt/r8pkoi","slide":2,"text":"Candidate-b deliberately contradicts the report and contains a shape extending beyond the slide. Preserve these seeded negative cases."}

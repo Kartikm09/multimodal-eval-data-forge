@@ -1,0 +1,12 @@
+{
+  "name": "multimodal-eval-forge-review-ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/review-state.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1"
+  }
+}

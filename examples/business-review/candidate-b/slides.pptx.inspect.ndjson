@@ -1,0 +1,16 @@
+{"kind":"deck","id":"pr/cct3w9","name":"Deck"}
+{"kind":"layout","layoutId":"b3e4d2b9-a9ab-4942-bd1a-7326bf19ac61","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"d06fdba1-3711-477d-b015-4188f4431d81","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/7qudyj","slide":1,"title":"Refill pilot review","textShapes":4}
+{"kind":"textbox","id":"sh/kfepw7e5","slide":1,"text":"Refill pilot review","textPreview":"Refill pilot review","textChars":19,"textLines":1,"bbox":[72,52,1120,80]}
+{"kind":"textbox","id":"sh/ze5on2xk","slide":1,"text":"Fictional Alder Refill Cooperative","textPreview":"Fictional Alder Refill Cooperative","textChars":34,"textLines":1,"bbox":[72,160,1120,65]}
+{"kind":"textbox","id":"sh/ydw7uxwz","slide":1,"text":"Units: 120\nUnit price: USD 25\nUnit cost: USD 15\nSource: source.json, v2","textPreview":"Units: 120 | Unit price: USD 25 | Unit cost: USD 15 | Source: source.json, v2","textChars":71,"textLines":4,"bbox":[72,260,1100,260]}
+{"kind":"textbox","id":"sh/xcn6lcfu","slide":1,"text":"candidate-b · Synthetic evaluation fixture · 18 September 2026","textPreview":"candidate-b · Synthetic evaluation fixture · 18 September 2026","textChars":62,"textLines":1,"bbox":[72,628,1100,48]}
+{"kind":"notes","id":"nt/7qudyj","slide":1,"text":"All business facts are fictional. Source: examples/business-review/source.json, version v2. This candidate may intentionally disagree with the source."}
+{"kind":"slide","id":"sl/3cenmg","slide":2,"title":"Decision and uncertainty","textShapes":5}
+{"kind":"textbox","id":"sh/xovqp8ba","slide":2,"text":"Decision and uncertainty","textPreview":"Decision and uncertainty","textChars":24,"textLines":1,"bbox":[72,52,1120,80]}
+{"kind":"textbox","id":"sh/al4redcj","slide":2,"text":"Decision: Reject the pilot","textPreview":"Decision: Reject the pilot","textChars":26,"textLines":1,"bbox":[72,200,1100,160]}
+{"kind":"textbox","id":"sh/bmd8nit4","slide":2,"text":"Demand is a planning assumption and has not been measured.","textPreview":"Demand is a planning assumption and has not been measured.","textChars":58,"textLines":1,"bbox":[72,410,1080,120]}
+{"kind":"textbox","id":"sh/kr69knul","slide":2,"text":"Package mass 125 kg","textPreview":"Package mass 125 kg","textChars":19,"textLines":1,"bbox":[1180,580,400,80]}
+{"kind":"textbox","id":"sh/lsfqtsb6","slide":2,"text":"Synthetic review fixture. Human assessment remains required.","textPreview":"Synthetic review fixture. Human assessment remains required.","textChars":60,"textLines":1,"bbox":[72,632,1000,40]}
+{"kind":"notes","id":"nt/3cenmg","slide":2,"text":"Candidate-b deliberately contradicts the report and contains a shape extending beyond the slide. Preserve these seeded negative cases."}

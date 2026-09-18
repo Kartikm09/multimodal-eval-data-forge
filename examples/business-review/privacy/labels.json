@@ -1,0 +1,14 @@
+{
+  "classification": "synthetic",
+  "sensitive_values": [
+    "Asha Example",
+    "asha@example.test",
+    "ACCT-SYN-1042"
+  ],
+  "preserve_values": [
+    "Kit model 1042",
+    "Demand remains uncertain"
+  ],
+  "known_negative": "painted-only.pdf hides text visually but retains extractable sensitive values",
+  "matching_rule": "exact normalized span equality; fullwidth compatibility folded, casefolded, Unicode format characters removed; unmatched spans count false positive/negative"
+}

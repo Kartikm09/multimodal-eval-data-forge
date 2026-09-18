@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "classification": "synthetic",
+  "bundle_id": "candidate-b",
+  "source_version": "v2",
+  "issues": [
+    {
+      "id": "issue-1",
+      "code": "inconsistent_units",
+      "file": "report.docx",
+      "detail": "Claim unit differs from source unit",
+      "source_ref": "S4",
+      "expected": "g",
+      "actual": "kg",
+      "severity": "error"
+    },
+    {
+      "id": "issue-2",
+      "code": "contradictory_conclusion",
+      "file": "slides.pptx",
+      "detail": "Report and slide conclusions differ",
+      "source_ref": null,
+      "expected": "Approve a limited pilot subject to reviewer approval",
+      "actual": "Reject the pilot",
+      "severity": "error"
+    },
+    {
+      "id": "issue-3",
+      "code": "clipping",
+      "file": "slides.pptx",
+      "detail": "Text shape extends outside slide",
+      "source_ref": null,
+      "expected": null,
+      "actual": {
+        "part": "ppt/slides/slide2.xml",
+        "text": "Package mass 125 kg",
+        "bounds": [
+          11239500,
+          5524500,
+          3810000,
+          762000
+        ]
+      },
+      "severity": "error"
+    }
+  ],
+  "requires_human_review": true,
+  "automated_status": "review",
+  "human_review_topics": [
+    "writing quality",
+    "ambiguous privacy context"
+  ],
+  "certification": false
+}
